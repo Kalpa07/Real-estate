@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2C5F2D;
+  --color-secondary: #D94F30;
+  --color-grey: #A9A9A9;
+  --neutral: #320F0F;
+  --accent: #FDF6ED;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --font-inter: 'Inter';
+  --font-poppins: 'Poppins';
+  --font-roboto: 'Roboto';
+}
+
+
+/* 
+@layer utilities {
+  .bg-color-primary {
+    background-color: var(--color-primary) !important;
+  }
+
+  .bg-secondary-color {
+    background-color: var(--color-secondary) !important;
+  }
+
+  .bg-grey {
+    background-color: var(--color-grey) !important;
+  }
+
+  .bg-color-neutral {
+    background-color: var(--neutral) !important;
+  }
+
+  .bg-accent {
+    background-color: var(--accent);
+  }
+
+  .text-color-primary {
+    color: var(--color-primary) !important;
+  }
+
+  .text-secondary-color {
+    color: var(--color-secondary) !important;
+  }
+
+  .text-grey {
+    color: var(--color-grey);
+  }
+
+  .text-color-neutral {
+    color: var(--neutral) !important; 
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+} */
