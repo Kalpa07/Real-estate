@@ -1,14 +1,43 @@
+import { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="bg-primary text-white shadow-md px-6 py-3 fixed w-full h-50 z-50 flex justify-between items-center">
-      <div className="text-xl font-bold">Kalpa</div>
-      <div className="flex gap-6 text-sm font-medium">
-        <a href="#home" className="hover:text-blue-500 transition">Home</a>
-        <a href="#about" className="hover:text-blue-500 transition">About</a>
-        <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
-        <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+    <>
+      <nav className="bg-primary text-white shadow-md px-6 py-3 fixed w-full z-50 flex justify-between items-center">
+        <div className="flex gap-6 text-sm font-medium flex-grow justify-center hidden md:flex">
+          <a href="#home" className="hover:text-blue-500 transition">Home</a>
+          <a href="#about" className="hover:text-blue-500 transition">About</a>
+          <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
+          <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+        </div>
+
+        <div className="text-sm font-bold items-center flex mr-20">
+          <img src="/Terranest.png" className="h-8 mr-2" alt="Logo" />
+          <img src="/Terranest-brown.png" className="h-6" alt="Logo" />
+        </div>
+
+        <div className="md:hidden flex items-center">
+          <button className="text-white" onClick={toggleMenu}>
+           <GiHamburgerMenu className="text-white h-6 w-6" />
+          </button>
+        </div>
+      </nav>
+
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute left-0 w-full bg-primary text-white mt-2 transition-all duration-300 ease-in-out`}>
+        <a href="#home" className="block text-white py-3 text-center font-semibold">Home</a>
+        <a href="#about" className="block text-white py-2 text-center font-semibold">About</a>
+        <a href="#contact" className="block text-white py-2 text-center font-semibold">Projects</a>
+
+        <a href="#contact" className="block text-white py-2 text-center font-semibold">Contact</a>
       </div>
-    </nav>
+    </>
   );
 };
 
