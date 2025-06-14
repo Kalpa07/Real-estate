@@ -11,11 +11,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-primary text-white shadow-md px-6 py-3 fixed w-full z-50 flex justify-between items-center">
-        <div className="flex gap-6 text-sm font-medium flex-grow justify-center hidden md:flex">
-          <a href="#home" className="hover:text-blue-500 transition">Home</a>
-          <a href="#about" className="hover:text-blue-500 transition">About</a>
-          <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
-          <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+        <div className="hidden gap-6 text-sm font-medium flex-grow justify-center  md:flex">
+          <a href="#home" className="hover:text-secondary transition">Home</a>
+          <a href="#about" className="hover:text-secondary transition">About</a>
+          <a href="#projects" className="hover:text-secondary transition">Projects</a>
+          <a href="#contact" className="hover:text-secondary transition">Contact</a>
         </div>
 
         <div className="text-sm font-bold items-center flex mr-20">
@@ -31,11 +31,11 @@ const Navbar = () => {
       </nav>
 
       <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute left-0 w-full bg-primary text-white mt-2 transition-all duration-300 ease-in-out`}>
-        <a href="#home" className="block text-white py-3 text-center font-semibold">Home</a>
-        <a href="#about" className="block text-white py-2 text-center font-semibold">About</a>
-        <a href="#contact" className="block text-white py-2 text-center font-semibold">Projects</a>
+        <a href="#home" className="block text-white py-3 text-center font-semibold hover:text-secondary transition">Home</a>
+        <a href="#about" className="block text-white py-2 text-center font-semibold hover:text-secondary transition">About</a>
+        <a href="#contact" className="block text-white py-2 text-center font-semibold hover:text-secondary transition">Projects</a>
 
-        <a href="#contact" className="block text-white py-2 text-center font-semibold">Contact</a>
+        <a href="#contact" className="block text-white py-2 text-center font-semibold hover:text-secondary transition">Contact</a>
       </div>
     </>
   );
