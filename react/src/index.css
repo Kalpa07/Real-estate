@@ -17,3 +17,17 @@
   --font-poppins: 'Poppins';
   --font-roboto: 'Roboto';
 }
+
+
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px); /* tweak this for more or less bounce */
+  }
+}
+
+.gentle-bounce {
+  animation: gentleBounce 1.2s infinite;
+}
