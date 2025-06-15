@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { CgArrowLongDownC } from "react-icons/cg";
+import { TbArrowNarrowDownDashed } from "react-icons/tb";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,6 +10,8 @@ const Header = () => {
     const rightGateRef = useRef(null);
     const headerRef = useRef(null);
     const grassRef = useRef(null);
+    const textRef = useRef(null);
+    const scrollRef = useRef(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -24,6 +26,10 @@ const Header = () => {
                 y: 0,
                 scaleX: 1,
                 scaleY: 1,
+            });
+
+            gsap.set(scrollRef.current, {
+                y: 0,
             });
 
             gsap.set(leftGateRef.current, {
@@ -87,6 +93,25 @@ const Header = () => {
                 },
                 "<"
             );
+
+            gateTL.to(
+                textRef.current,
+                {
+                    opacity: 0,
+                    ease: "none",
+                },
+                "<"
+            );
+
+            gateTL.to(
+                scrollRef.current,
+                {
+                    y: 100,           
+                    opacity: 0,        
+                    ease: "none",
+                },
+                "<"
+            );
         });
 
         return () => {
@@ -106,36 +131,31 @@ const Header = () => {
                     style={{ position: "fixed", opacity: 0.3 }}
                 />
                 <div className="h-screen w-full absolute flex flex-col z-[25]">
-                    {/* <div className="flex flex-row items-center gap-10 h-20 top-20 ">
-                        <img
-                            src="/Terranest.png"
-                            alt="Logo"
-                            className="h-12 pointer-events-none "
-                            style={{ position: "fixed" }}
-                        />
-                        <img
-                            src="/Terranest-brown.png"
-                            alt="Logo"
-                            className="h-4 pointer-events-none ml-2"
-                            style={{ position: "fixed" }}
-                        />
-                    </div> */}
-                    <div className="text-sm font-bold items-center flex right-12 top-10 fixed">
-                        <img src="/Terranest.png" className="h-14 mr-2" alt="Logo" />
-                        <img src="/Terranest-brown.png" className="h-10" alt="Logo" />
+                    <div className="w-full h-1/3">
+                        <div className="text-sm  font-bold items-center flex right-12 top-10 fixed">
+                            <img src="/Terranest.png" className="h-14 mr-2" alt="Logo" />
+                            <img src="/Terranest-brown.png" className="h-10" alt="Logo" />
+                        </div>
                     </div>
-                    <div className="relative h-screen flex justify-center items-center font-poppins">
-                        <div className="relative bottom-20">
+                    <div className="h-1/2 flex justify-center items-center font-poppins">
+                        <div ref={textRef} className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                             <h1 className="absolute top-1 left-1 w-[620px] text-center text-accent text-6xl font-bold gentle-bounce">
-                                Your Place is waiting for you!!
+                            Welcome to where you belong!!
                             </h1>
                             <h1 className="w-[620px] text-secondary text-center text-6xl font-bold gentle-bounce delay-2000">
-                                Your Place is waiting for you!!
+                            Welcome to where you belong!!
                             </h1>
                         </div>
                     </div>
-                    <div>
-                        <CgArrowLongDownC className="h-20"/>
+                    <div  className="w-full h-1/3">
+                        <div ref={scrollRef} className="w-full mt-10 text-white flex flex-col justify-center items-center fixed ">
+                            <div className="gentle-bounce">
+                                <h2 className="font-semibold">Scroll Down</h2>
+                            </div>
+                            <div className=" gentle-bounce">
+                                <TbArrowNarrowDownDashed className="w-24 h-24" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
