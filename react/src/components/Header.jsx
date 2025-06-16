@@ -108,10 +108,10 @@ const Header = () => {
 
             gateTL.to(grassRef.current, {
                 x: 0,
-                y: 50,
+                y: 30,
                 scaleX: 1,
                 scaleY: 1,
-                ease: "none",
+                ease: "power2.inOut",
             }, "<");
 
             gateTL.to(leftGateRef.current, {

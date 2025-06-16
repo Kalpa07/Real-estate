@@ -26,7 +26,7 @@ const Home = () => {
       onLeaveBack: () => {
         gsap.to(navbarRef.current, {
           opacity: 0,
-          duration: 0.3,
+          duration: 0.5,
           ease: "power2.in",
         });
       },
@@ -39,10 +39,8 @@ const Home = () => {
 
   return (
     <div className="bg-neutral">
-      {/* 1️⃣ Header stays full-screen */}
       <Header />
 
-      {/* 2️⃣ Navbar appears only after Header scrolls out */}
       <div
         ref={navbarRef}
         className="fixed top-0 w-full z-[60] pointer-events-none"
@@ -52,9 +50,11 @@ const Home = () => {
         </div>
       </div>
 
-      {/* 3️⃣ This section triggers the Navbar */}
       <div id="next-section" className="h-screen bg-neutral">
-        <div className="flex justify-center items-center h-full">
+        <div className="flex justify-center items-center h-screen">
+          <Overview />
+        </div>
+        <div className="flex justify-center items-center h-screen">
           <Overview />
         </div>
       </div>

@@ -31,3 +31,8 @@
 .gentle-bounce {
   animation: gentleBounce 1.2s infinite;
 }
+
+.floating-icon {
+  position: absolute;
+
+}
