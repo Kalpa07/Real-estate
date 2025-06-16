@@ -65,7 +65,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"

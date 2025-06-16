@@ -89,7 +89,7 @@ const Header = () => {
             scrollTrigger: {
                 trigger: ".hero-section",
                 start: "top top",
-                end: "+=100%", // or +=100vh
+                end: "+=100%", 
                 scrub: true,
                 pin: true,
                 snap: 1,
@@ -108,7 +108,7 @@ const Header = () => {
 
             gateTL.to(grassRef.current, {
                 x: 0,
-                y: 30,
+                y: 15,
                 scaleX: 1,
                 scaleY: 1,
                 ease: "power2.inOut",

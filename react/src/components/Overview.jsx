@@ -81,9 +81,7 @@ const Overview = () => {
 
             <div className="w-80 ml-20 text-accent">
                 <h2 className="font-poppins text-5xl font-semibold leading-[3.5rem] text-left">
-                    Homes
-                    Designed for
-                    Living
+                    Homes Designed for Living
                 </h2>
                 <p className="font-roboto text-lg text-left mt-4 leading-relaxed">
                     From city apartments to peaceful retreats, our listings are curated
