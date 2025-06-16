@@ -43,39 +43,59 @@ const Header = () => {
                 transformOrigin: "bottom right",
             });
 
-            gsap.to([headerRef.current, grassRef.current, leftGateRef.current, rightGateRef.current], {
-                opacity: 0,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: "#next-section",
-                    start: "top bottom", 
-                    end: "top center", 
-                    scrub: true,
+            // gsap.to([headerRef.current, grassRef.current, leftGateRef.current, rightGateRef.current], {
+            //     opacity: 0,
+            //     ease: "none",
+            //     scrollTrigger: {
+            //         trigger: "#next-section",
+            //         start: "top bottom", 
+            //         end: "top center", 
+            //         scrub: true,
+            //         pin: true,
+            //         snap: 1,
+            //         pinSpacing: true,
+            //     },
+            // });
+
+       arrowRef.current.addEventListener("click", () => {
+            gsap.to(window, {
+                scrollTo: {
+                y: "#next-section",
+                offsetY: 0,
+                snap:1
                 },
+                duration: 1,
+                ease: "power2.inOut",
             });
 
-            arrowRef.current.addEventListener("click", () => {
-                gsap.to(window, {
-                    scrollTo: "#next-section",
-                    duration: 1,
-                    ease: "power2.inOut",
-                });
-
-                gsap.to([headerRef.current, grassRef.current, leftGateRef.current, rightGateRef.current, textRef.current, arrowRef.current], {
-                    opacity: 0,
-                    duration: 0.5,
-                });
+            gsap.to(
+                [
+                headerRef.current,
+                grassRef.current,
+                leftGateRef.current,
+                rightGateRef.current,
+                textRef.current,
+                arrowRef.current,
+                ],
+                {
+                opacity: 0,
+                duration: 0.5,
+                pinSpacing: true,
+                }
+            );
             });
 
             const gateTL = gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".hero-section",
-                    start: "top top",
-                    end: "bottom top",
-                    scrub: true,
-                    pin: true,
-                    pinSpacing: true,
-                },
+            scrollTrigger: {
+                trigger: ".hero-section",
+                start: "top top",
+                end: "+=100%", // or +=100vh
+                scrub: true,
+                pin: true,
+                snap: 1,
+                pinSpacing: true,
+                opacity:0
+            },
             });
 
             gateTL.to(headerRef.current, {
