@@ -44,28 +44,28 @@ const Overview = () => {
     return (
         <div className="h-screen w-full bg-neutral flex items-center justify-center relative">
             <img
-                src="/headerbg.png"
+                src="/small1.png"
                 alt="icon1"
                 className="floating-icon h-16 w-16 absolute top-[10%] left-[15%]"
             />
             <img
-                src="/headerbg.png"
+                src="/small1.png"
                 alt="icon2"
                 className="floating-icon h-12 w-12 absolute top-[40%] right-[20%]"
             />
             <img
-                src="/headerbg.png"
+                src="/small1.png"
                 alt="icon3"
                 className="floating-icon h-16 w-16 absolute bottom-[10%] left-1/2 transform -translate-x-1/2"
             />
             <img
-                src="/headerbg.png"
+                src="/small1.png"
                 alt="icon4"
                 className="floating-icon h-12 w-12 absolute bottom-[40%] left-[5%]"
             />
             <div ref={polaroidRef} className="relative h-96 w-80 p-5 bg-accent shadow-lg rounded-lg">
                 <img
-                    src="headerbg.png"
+                    src="poloroid.png"
                     alt="Polaroid"
                     className="h-60 w-full object-cover rounded-md"
                 />

@@ -8,7 +8,7 @@ const reasons = [
   {
     title: "Sustainable Living",
     description: "Eco-friendly homes that reduce your carbon footprint.",
-    image: "/headerbg.png", 
+    image: "/reason1.png", 
   },
   {
     title: "Modern Architecture",

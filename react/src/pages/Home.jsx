@@ -3,6 +3,10 @@ import Header from "../components/Header";
 import Overview from "../components/Overview";
 import WhyUs from "../components/WhyUs";
 import Navbar from "../components/Navbar";
+import Properties from "../components/Properties";
+import Reviews from "../components/Reviews";
+import Footer from "../components/Footer";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -57,6 +61,15 @@ const Home = () => {
         </div>
         <div className="flex justify-center items-center h-screen">
           <WhyUs />
+        </div>
+          <div className="flex justify-center items-center h-screen">
+          <Properties />
+        </div>
+          <div className="flex justify-center items-center h-screen">
+          <Reviews />
+        </div>
+          <div className="flex justify-center items-center h-screen">
+          <Footer />
         </div>
       </div>
     </div>
