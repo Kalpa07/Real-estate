@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Overview from "../components/Overview";
+import WhyUs from "../components/WhyUs";
 import Navbar from "../components/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,11 +12,11 @@ const Home = () => {
   const navbarRef = useRef(null);
 
   useEffect(() => {
-    gsap.set(navbarRef.current, { opacity: 0 }); // Set initial opacity to 0
+    gsap.set(navbarRef.current, { opacity: 0 }); 
 
     ScrollTrigger.create({
       trigger: "#next-section",
-      start: "top center", // When the top of #next-section hits the center of the viewport
+      start: "top center",
       onEnter: () => {
         gsap.to(navbarRef.current, {
           opacity: 1,
@@ -55,7 +56,7 @@ const Home = () => {
           <Overview />
         </div>
         <div className="flex justify-center items-center h-screen">
-          <Overview />
+          <WhyUs />
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-4px); /* tweak this for more or less bounce */
+    transform: translateY(-4px);
   }
 }
 
