@@ -1,11 +1,14 @@
-import Header from "../components/Header"
+import Header from "../components/Header";
 
 const Home = () => {
-
-
   return (
-    <div className="h-full bg-neutral">
-      <Header/>
+    <div className="bg-neutral">
+      <Header />
+      <div id="next-section" className="h-screen bg-neutral">
+        <div className="flex justify-center items-center h-full">
+          <h1 className="text-4xl font-bold">This is the next section!</h1>
+        </div>
+      </div>
     </div>
   );
 };
