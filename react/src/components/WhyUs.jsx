@@ -18,7 +18,7 @@ const reasons = [
   {
     title: "Community First",
     description: "Thriving communities with shared spaces and joy.",
-    image: "/headerbg.png",
+    image: "/reason3.png",
   },
 ];
 

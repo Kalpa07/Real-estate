@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="next-section" className="h-screen bg-neutral">
+      <div id="next-section" className="h-full bg-neutral">
         <div className="flex justify-center items-center h-screen">
           <Overview />
         </div>
