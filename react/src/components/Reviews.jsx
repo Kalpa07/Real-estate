@@ -50,7 +50,7 @@ const Reviews = () => {
     <section className="bg-accent text-gray-900 px-6 py-16 sm:px-10 lg:px-24">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold mb-2 text-gray-800">What Our Clients Say</h2>
-        <p className="text-gray-500 text-sm">
+        <p className="text-gray-500 font-poppins text-sm">
           Real experiences from people who found their perfect home with TerraNest.
         </p>
       </div>
