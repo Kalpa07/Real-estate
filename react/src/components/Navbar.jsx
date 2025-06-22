@@ -39,17 +39,17 @@ const Navbar = () => {
         className="bg-none bg-opacity-50 text-white shadow-md px-6 py-3 fixed w-full z-50 flex justify-between items-center transition-opacity duration-500"
       >
         <div className="hidden gap-6 text-sm font-medium flex-grow justify-center md:flex">
-          <a href="#home" className="hover:text-secondary transition">
-            Home
+          <a href="#overview-section" className="hover:text-secondary transition">
+            Overview
           </a>
-          <a href="#about" className="hover:text-secondary transition">
-            About
+          <a href="#whyus-section" className="hover:text-secondary transition">
+            Why Us
           </a>
-          <a href="#projects" className="hover:text-secondary transition">
-            Projects
+          <a href="#properties-section" className="hover:text-secondary transition">
+            Properties
           </a>
-          <a href="#contact" className="hover:text-secondary transition">
-            Contact
+          <a href="#reviews-section" className="hover:text-secondary transition">
+            Reviews
           </a>
         </div>
 
