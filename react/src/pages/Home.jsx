@@ -56,16 +56,16 @@ const Home = () => {
       </div>
 
       <div id="next-section" className="h-full bg-neutral">
-        <div className="flex justify-center items-center h-screen">
+        <div id="overview-section" className="flex justify-center items-center h-screen">
           <Overview />
         </div>
-        <div className="flex justify-center items-center h-screen">
+        <div id="whyus-section" className="flex justify-center items-center h-screen">
           <WhyUs />
         </div>
-          <div className="flex justify-center items-center h-screen">
+          <div id="properties-section" className="flex justify-center items-center h-screen">
           <Properties />
         </div>
-          <div className="flex justify-center items-center h-screen">
+          <div id="reviews-section" className="flex justify-center items-center h-screen">
           <Reviews />
         </div>
           <Footer />

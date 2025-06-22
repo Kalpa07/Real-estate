@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -62,10 +62,10 @@ const Footer = () => {
         <div ref={(el) => (sectionRefs.current[1] = el)}>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2  text-sm">
-            <li><a href="/" className="hover:text-secondary transition-all">Home</a></li>
-            <li><a href="/properties" className="hover:text-secondary transition-all">Properties</a></li>
-            <li><a href="/about" className="hover:text-secondary transition-all">About Us</a></li>
-            <li><a href="/contact" className="hover:text-secondary transition-all">Contact</a></li>
+            <li><a href="#overview-section" className="hover:text-secondary transition-all">Overview</a></li>
+            <li><a href="#whyus-section" className="hover:text-secondary transition-all">Why US</a></li>
+            <li><a href="#properties-section" className="hover:text-secondary transition-all">Properties</a></li>
+            <li><a href="#reviews-section" className="hover:text-secondary transition-all">Reviews</a></li>
           </ul>
         </div>
 
