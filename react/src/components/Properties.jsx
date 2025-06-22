@@ -126,7 +126,7 @@ const Properties = () => {
 
       {/* Title and Subtitle + Sale Sign */}
       <div className="absolute top-20 left-10 z-30 w-[80%] md:w-[40%]">
-        <div className="mb-28">
+        <div className="mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             {property.title}
           </h2>
