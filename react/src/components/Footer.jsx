@@ -47,13 +47,13 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className="bg-primary text-white px-6 py-14 sm:px-10 lg:px-24 rounded-t-3xl shadow-inner"
+      className="bg-primary text-accent px-6 py-14 sm:px-10 lg:px-24 rounded-t-3xl shadow-inner"
     >
       <div className="grid gap-10 md:grid-cols-3">
         {/* Brand */}
         <div ref={(el) => (sectionRefs.current[0] = el)}>
-          <h2 className="text-3xl font-bold mb-3 text-primary-400">TerraNest</h2>
-          <p className="text-sm text-gray-400 leading-relaxed">
+          <h2 className="text-3xl font-bold mb-3 ">TerraNest</h2>
+          <p className="text-sm leading-relaxed">
             Discover your perfect space with TerraNest. Modern architecture, prime locations, and unmatched lifestyle — curated just for you.
           </p>
         </div>
@@ -61,11 +61,11 @@ const Footer = () => {
         {/* Links */}
         <div ref={(el) => (sectionRefs.current[1] = el)}>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            <li><a href="/" className="hover:text-primary transition-all">Home</a></li>
-            <li><a href="/properties" className="hover:text-primary transition-all">Properties</a></li>
-            <li><a href="/about" className="hover:text-primary transition-all">About Us</a></li>
-            <li><a href="/contact" className="hover:text-primary transition-all">Contact</a></li>
+          <ul className="space-y-2  text-sm">
+            <li><a href="/" className="hover:text-secondary transition-all">Home</a></li>
+            <li><a href="/properties" className="hover:text-secondary transition-all">Properties</a></li>
+            <li><a href="/about" className="hover:text-secondary transition-all">About Us</a></li>
+            <li><a href="/contact" className="hover:text-secondary transition-all">Contact</a></li>
           </ul>
         </div>
 
@@ -73,7 +73,6 @@ const Footer = () => {
         <div ref={(el) => (sectionRefs.current[2] = el)}>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p className="text-sm text-gray-300 mb-2">Mumbai, India</p>
-          <p className="text-sm text-gray-300 mb-2">+91 98765 43210</p>
           <p className="text-sm text-gray-300 flex items-center gap-2">
             <FaEnvelope /> support@terranest.in
           </p>
@@ -82,21 +81,21 @@ const Footer = () => {
           <div className="flex gap-4 mt-5 text-xl">
             <a
               href="#"
-              className="hover:text-primary transform hover:scale-110 transition-all duration-300"
+              className="hover:text-secondary transform hover:scale-110 transition-all duration-300"
               aria-label="Instagram"
             >
               <FaInstagram />
             </a>
             <a
               href="#"
-              className="hover:text-primary transform hover:scale-110 transition-all duration-300"
+              className="hover:text-secondary transform hover:scale-110 transition-all duration-300"
               aria-label="Facebook"
             >
               <FaFacebook />
             </a>
             <a
               href="#"
-              className="hover:text-primary transform hover:scale-110 transition-all duration-300"
+              className="hover:text-secondary transform hover:scale-110 transition-all duration-300"
               aria-label="LinkedIn"
             >
               <FaLinkedin />
@@ -106,7 +105,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom copyright */}
-      <div className="border-t border-gray-800 mt-12 pt-6 text-sm text-gray-500 text-center">
+      <div className="border-t border-gray-800 mt-12 pt-6 text-sm text-accent text-center">
         © {new Date().getFullYear()} TerraNest. All rights reserved.
       </div>
     </footer>
