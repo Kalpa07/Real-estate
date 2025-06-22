@@ -49,17 +49,17 @@ const Overview = () => {
                 className="floating-icon h-16 w-16 absolute top-[10%] left-[15%]"
             />
             <img
-                src="/small1.png"
+                src="/small2.png"
                 alt="icon2"
                 className="floating-icon h-12 w-12 absolute top-[40%] right-[20%]"
             />
             <img
-                src="/small1.png"
+                src="/small3.png"
                 alt="icon3"
                 className="floating-icon h-16 w-16 absolute bottom-[10%] left-1/2 transform -translate-x-1/2"
             />
             <img
-                src="/small1.png"
+                src="/small4.png"
                 alt="icon4"
                 className="floating-icon h-12 w-12 absolute bottom-[40%] left-[5%]"
             />
