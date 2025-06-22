@@ -68,9 +68,7 @@ const Home = () => {
           <div className="flex justify-center items-center h-screen">
           <Reviews />
         </div>
-          <div className="flex justify-center items-center h-screen">
           <Footer />
-        </div>
       </div>
     </div>
   );
