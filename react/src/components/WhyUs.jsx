@@ -47,12 +47,12 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex bg-neutral">
+    <div className="w-full h-[100vh] flex flex-col md:flex-row bg-neutral">
       {reasons.map((reason, index) => (
         <div
           key={index}
           ref={(el) => (sectionRefs.current[index] = el)}
-          className="w-1/3 h-screen relative group overflow-hidden bg-cover bg-center bg-no-repeat transition-opacity duration-500"
+          className="w-full md:w-1/3 h-full relative group overflow-hidden bg-cover bg-center bg-no-repeat transition-opacity duration-500 mb-6 md:mb-0"
           style={{
             backgroundImage: `url(${reason.image})`,
             backgroundColor: 'lightgray',
@@ -62,8 +62,8 @@ const WhyUs = () => {
 
           <div className="absolute inset-0 group-hover:bg-opacity-70 transition-all duration-500 z-20 flex items-center justify-center">
             <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 max-w-xs text-center px-4">
-              <h2 className="text-2xl font-bold mb-2">{reason.title}</h2>
-              <p className="text-md">{reason.description}</p>
+              <h2 className="text-xl md:text-2xl font-bold mb-2">{reason.title}</h2>
+              <p className="text-sm md:text-md">{reason.description}</p>
             </div>
           </div>
         </div>
